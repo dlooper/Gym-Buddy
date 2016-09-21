@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- GENERAL STRINGS -->
     <string name="app_name">Gym Buddy</string>
+    <string name="reps_literally">" reps, "</string>
+    <string name="wght_literally">" lbs."</string>
+    <string name="sets_literally">" sets, "</string>
     <string name="reps">Number of Reps: </string>
     <string name="wght">Weight Used: </string>
     <string name="sets">Number of Sets: </string>
+    <string name="data_text">Data From Last Workout: </string>
+    <string name="button_send">Finish Workout</string>
+    <!-- GENERAL STRINGS -->
+
+    <!-- DAY 1 STRINGS -->
+    <string name="upper_chest">Upper Chest Day</string>
+    <!-- EX 1 STRINGS -->
     <string name="ex1">Barbell Incline Bench Press Medium-Grip</string>
-    <string name="ex2">Incline Dumbbell Press</string>
-    <string name="ex1_reps">0</string>
-    <string name="ex1_wght">0</string>
-    <string name="ex1_sets">0</string>
-    <string name="ex2_reps">0</string>
-    <string name="ex2_wght">0</string>
-    <string name="ex2_sets">0</string>
+    <string name="ex1_recmd">3 sets, 4&#8211;6 reps</string>
+    <integer name="ex1_reps">0</integer>
+    <integer name="ex1_wght">0</integer>
+    <integer name="ex1_sets">0</integer>
+    <integer name="ex1_reps_data">0</integer>
+    <integer name="ex1_sets_data">0</integer>
+    <integer name="ex1_wght_data">0</integer>
     <string name="img_bar_inc_med1">barbell incline medium grip image 1</string>
     <string name="img_bar_inc_med2">barbell incline medium grip image 2</string>
-    <string name="button_send">Finish Workout</string>
-    <string name="upper_chest">Upper Chest Day</string>
+    <!-- EX 2 STRINGS -->
+    <string name="ex2">Incline Dumbbell Press</string>
+    <string name="ex2_recmd">3 sets, 8 reps</string>
+    <integer name="ex2_reps">0</integer>
+    <integer name="ex2_wght">0</integer>
+    <integer name="ex2_sets">0</integer>
+    <integer name="ex2_reps_data">0</integer>
+    <integer name="ex2_sets_data">0</integer>
+    <integer name="ex2_wght_data">0</integer>
+    <string name="img_inc_dumb1">incline dumbbell press image 1</string>
+    <string name="img_inc_dumb2">incline dumbbell press image 2</string>
+    <!-- EX 3 STRINGS -->
+    <!-- EX 4 STRINGS -->
 </resources>

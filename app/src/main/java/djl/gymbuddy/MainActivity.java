@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
     /** Called when the user clicks the Send button */
     public void sendMessage(View view) {;
-        /*Intent intent = new Intent(this, DisplayMessageActivity.class);
+        Intent intent = new Intent(this, Day1_Ex2.class);
         EditText editText = (EditText) findViewById(R.id.ex1_reps);
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
-        startActivity(intent);*/
+        startActivity(intent);
     }
 
 }
