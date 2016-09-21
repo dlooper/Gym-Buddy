@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gym Buddy</string>
+    <string name="reps">Number of Reps: </string>
+    <string name="wght">Weight Used: </string>
+    <string name="sets">Number of Sets: </string>
+    <string name="ex1">Barbell Incline Bench Press Medium-Grip</string>
+    <string name="ex2">Incline Dumbbell Press</string>
+    <string name="ex1_reps">0</string>
+    <string name="ex1_wght">0</string>
+    <string name="ex1_sets">0</string>
+    <string name="ex2_reps">0</string>
+    <string name="ex2_wght">0</string>
+    <string name="ex2_sets">0</string>
+    <string name="img_bar_inc_med1">barbell incline medium grip image 1</string>
+    <string name="img_bar_inc_med2">barbell incline medium grip image 2</string>
+    <string name="button_send">Finish Workout</string>
+    <string name="upper_chest">Upper Chest Day</string>
+</resources>
