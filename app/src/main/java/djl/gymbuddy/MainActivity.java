@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
@@ -36,20 +37,43 @@ public class MainActivity extends AppCompatActivity {
     String beforeDate = "09-28-2016";
     //********************************************************
     public final static String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+
+    @Override
+    public void onStart(){
+        super.onStart();
+        DatabaseOperations DOP = new DatabaseOperations(ctx);
+        String test = DOP.getInformation(DOP);
+        String delims = "[ ,\n]+";
+        String[] tokens = test.split(delims);
+        Log.v("reps", tokens[3]);
+        Log.v("sets", tokens[5]);
+        Log.v("weight", tokens[7]);
+
+        TextView textView1 = (TextView)findViewById(R.id.ex1_reps_data);
+        textView1.setText(tokens[3], TextView.BufferType.EDITABLE);
+        TextView textView2 = (TextView)findViewById(R.id.ex1_sets_data);
+        textView2.setText(tokens[5], TextView.BufferType.EDITABLE);
+        TextView textView3 = (TextView)findViewById(R.id.ex1_wght_data);
+        textView3.setText(tokens[7], TextView.BufferType.EDITABLE);
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        DatabaseOperations DOP = new DatabaseOperations(ctx);
-        Cursor CR = DOP.getInformation(DOP);
-        CR.moveToFirst();
+        // RETRIVE DATA FROM DATABASE
+        //DatabaseOperations DOP = new DatabaseOperations(ctx);
+        //String test = DOP.getInformation(DOP);
+        //EditText editText = (EditText)findViewById(R.id.past_data);
+        //editText.setText("ho", TextView.BufferType.EDITABLE);
+        /*CR.moveToFirst();
         boolean loginStatus = false;
         String NAME = "";
         do {
 
-        }while(CR.moveToNext());
+        }while(CR.moveToNext());*/
 
         WORKOUT = "UpperChest";
         DATE = "9/29/2016";

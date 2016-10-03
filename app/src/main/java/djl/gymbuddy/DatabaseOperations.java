@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * Created by Doran on 9/26/2016.
@@ -45,21 +47,21 @@ public class DatabaseOperations extends SQLiteOpenHelper {
         Log.d("Database operations", "One row inserted");
     }
 
-    public Cursor getInformation(DatabaseOperations dop) {
+    public String getInformation(DatabaseOperations dop) {
         SQLiteDatabase SQ = dop.getReadableDatabase();
         String test = getTableAsString(SQ);
         Log.v("test", test);
 
         String[] columns = {WorkoutTable.WorkoutInfo.WORKOUT, WorkoutTable.WorkoutInfo.DATE};
         Cursor CR = SQ.query(WorkoutTable.WorkoutInfo.TABLE_NAME, columns, null, null, null, null, null);
-        return CR;
+        return test;
     }
 
     public String getTableAsString(SQLiteDatabase db) {
         String tableName = WorkoutTable.WorkoutInfo.TABLE_NAME;
         Log.d("DbHelper", "getTableAsString called");
         String tableString = String.format("Table %s:\n", tableName);
-        Cursor allRows  = db.rawQuery("SELECT * FROM " + tableName, null);
+        Cursor allRows  = db.rawQuery("SELECT REPS, SETS, WEIGHT FROM " + tableName + " WHERE WORKOUT = 'UpperChest' ORDER BY DATE DESC LIMIT 1;", null);
         if (allRows.moveToFirst() ){
             String[] columnNames = allRows.getColumnNames();
             do {

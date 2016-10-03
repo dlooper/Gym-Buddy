@@ -10,6 +10,7 @@
     <string name="sets">Number of Sets: </string>
     <string name="data_text">Data From Last Workout: </string>
     <string name="button_send">Finish Workout</string>
+    <string name="past_info">DatabaseOperations.</string>
     <!-- GENERAL STRINGS -->
 
     <!-- DAY 1 STRINGS -->
