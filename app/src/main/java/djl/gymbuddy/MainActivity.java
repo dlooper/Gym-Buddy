@@ -22,6 +22,8 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+// Need to set it up so that date pulls from the android date and not from a hardcoded string
+// Ditto for Workout Name (?)
 
 public class MainActivity extends AppCompatActivity {
     String WORKOUT, DATE;
